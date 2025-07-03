@@ -14,3 +14,53 @@ p{
     padding: 15px;
     
 }
+.more-content {
+      display: none;
+    }
+
+    #toggle:checked ~ .more-content {
+      display: block;
+    }
+
+    .see-more-label {
+      color: blue;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .see-more-label::after {
+      content: ' See More';
+    }
+
+    #toggle:checked + .see-more-label::after {
+      content: ' See Less';
+    }
+
+    #toggle {
+      display: none;
+    }
+     .more {
+      display: none;
+    }
+
+    #short:checked ~ .more {
+      display: block;
+    }
+
+    .see-more::after {
+      content: 'See More';
+      color: blue;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #short:checked + .see-more::after {
+      content: 'See Less';
+    }
+
+    #short {
+      display: none;
+    }
+
